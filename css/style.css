@@ -650,7 +650,18 @@ footer .n-l input[type=button]{
 
 @media only screen and (max-width: 500px) {
 /* For mobile phones: */
-
+.row{
+  width:100%;
+}
+.sidepanel{
+  display: none;
+}
+.category-list-0{
+  width:100%;
+}
+header{
+  width: 100%;
+}
 header{
   margin: 0;
   position: relative;
@@ -882,7 +893,7 @@ footer .conti-2{
   margin-top: 20px;
 }
 .last-m-f{
-  display: blockm;
+  display: block;
 }
 }
 /*animations*/
