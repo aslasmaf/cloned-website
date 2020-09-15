@@ -30,7 +30,7 @@
             <div class="row">
                 <h2>tons<span>berg</span></h2>
 
-                <div class="ul-menu-icon openbtn" onclick="openNavUl()">
+                <div class="ul-menu-icon openbtn">
                     <div></div>
                     <div></div>
                     <div></div> 
@@ -45,6 +45,46 @@
                 </div>
             </div>
             <hr>
+            <!--mobile view nav-->
+            <div class="m-v-n" id="MobNav">
+                <ul>
+
+                          <li><a href="#">Home</a></li>
+                            <a href="#">Home v1</a>
+                            <a href="#">Home v2</a>
+                            <a href="#">Home v3</a>
+                            <a href="#">Home v4</a>
+                            <a href="#">Home v5</a>
+                            <a href="#">Home v6</a>
+                            <a href="#">Home v7</a>
+                            <a href="#">Home v8</a>
+                            <a href="#">Home v9</a>
+                            <a href="#">Home v10</a>
+                            <a href="#">Home v11</a>
+                            <a href="#">Home v12</a>
+                            <a href="#">Home Slider</a>
+                   
+                        <li><a href="#">Features</a></li>
+                            <a href="#">Suggest a Trip</a>
+                            <a href="#">Post Formats</a>
+                            <a href="#">Gallery </a>
+                            <a href="#">Typography</a>
+
+                        <li><a href="#">Discover</a></li>
+
+                        <li><a href="#">Destinations</a></li>
+
+                        <li><a href="#">Pages</a></li>
+                            <a href="#">Shop</a>
+                            <a href="#">About me</a>
+ 
+                        <li><a href="#">News</a></li>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <!--side panel-->
             <div id="mySidepanel" class="sidepanel" onclick="closeNavTouch();">
                 <div class="wrap-side-p">
@@ -494,6 +534,11 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
+  });
+});
+$(document).ready(function(){
+  $(".openbtn").click(function(){
+    $(".m-v-n").toggle();
   });
 });
 </script> 

@@ -18,4 +18,8 @@ function openNav() {
 
   }
 
+  function openMvn() {
+    document.getElementById("MobNav").style.display = "block";
+    //document.getElementById("closebtn").style.display = "block";
+  }
  

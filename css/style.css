@@ -631,6 +631,9 @@ footer .n-l input[type=button]{
 .last-m-f{
   display: none;
 }
+.m-v-n{
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .category-list-img{
@@ -703,7 +706,7 @@ nav ul{
   border: 3px solid #fff;
   display: inline-block;
   height: 45px;
-  left: 200px;
+  left: 300px;
   position: absolute;
 }
 
