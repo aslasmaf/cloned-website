@@ -56,6 +56,10 @@ header a{
   span{
       color:red;
   }
+  .prev,
+  .next{
+    display: none;
+  }
 /* Note: Try to remove the following lines to see the effect of CSS positioning */
 .affix {
     top: 0;
@@ -661,6 +665,52 @@ footer .n-l input[type=button]{
 }
 .category-list-0{
   width:100%;
+}
+/*slideshow*/
+.prev, .next{display: block;}
+.m-v-Slides {display: none}
+.slide-1{display:block;}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(252, 252, 252);
+  font-weight: bold;
+  font-size: 11px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(0, 0, 0,0.8);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 header{
   width: 100%;
