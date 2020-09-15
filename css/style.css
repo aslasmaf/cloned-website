@@ -706,7 +706,7 @@ nav ul{
   border: 3px solid #fff;
   display: inline-block;
   height: 45px;
-  left: 300px;
+  left: 325px;
   position: absolute;
 }
 
@@ -897,6 +897,42 @@ footer .conti-2{
 }
 .last-m-f{
   display: block;
+}
+.m-v-n ul{
+  text-decoration: none;
+  padding: 5px;
+}
+.m-v-n li{
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(73, 72, 72);
+}
+.m-v-n a{
+  text-decoration: none;
+  margin-left: 15px;
+  color: #fff;
+  border: none;
+  padding: 5px;
+
+}
+.m-v-n p{
+  border-bottom: 1px solid rgb(73, 72, 72);
+  margin: 0;
+  padding: 10px;
+  padding-left: 0;
+}
+.m-v-n p a{
+  margin: 0;
+  padding: 10px;
+  padding-left: 0;
+}
+.m-v-n a:hover{
+  text-decoration: none;
+  padding-left: 10px;
+  color: #fff;
+  border: none;
+  transform: 1000ms;
 }
 }
 /*animations*/
