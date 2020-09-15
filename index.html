@@ -23,10 +23,18 @@
         </script>
         <script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script> 
     </head>
-    <body id="body-s">
+    <body>
+<!--Header starts-->
         <header>
             <div class="row">
                 <h2>tons<span>berg</span></h2>
+
+                <div class="ul-menu-icon openbtn" onclick="openNavUl()">
+                    <div></div>
+                    <div></div>
+                    <div></div> 
+                </div>
+
                 <img src="image/adspic.JPG">
                 <div class="social-icon">
                     <i class="fa fa-twitter"></i>
@@ -79,12 +87,14 @@
                      <img src="image/calender.PNG" style="width: 85%;margin-bottom: 100px; margin-left: 30px;">
                 </div>
             </div> 
+        <!--End side panel-->
             <nav data-spy="affix" data-offset-top="197">
                 <div class="menu-icon openbtn" onclick="openNav()">
                     <div></div>
                     <div></div>
                     <div></div> 
                 </div>
+                
                 <ul>
                     <div class="dropdown" >
                         <li><a href="#">Home</a></li>
@@ -139,7 +149,7 @@
                     </div>
                 </ul>
             </nav>
-        </header>
+    </header>
         <div class="slide-shower">
             <div class="slide-1-s">
                 <h4 id="s1sh">LIFESTYLE</h4>
@@ -184,7 +194,7 @@
     <br><br>
 <div class="conti">
     <div class="recent-stories">
-        <h1>Recent Stories</h1>
+        <h2>Recent Stories</h1>
         <hr style="color: #000000;">
         <div class="stories">
             <img src="image/IMG_5948.JPG" alt="">
@@ -208,17 +218,19 @@
         <hr>
         <img src="image/IMG_5950.JPG" alt="">
     </div>
-    <div class="w-l">
-        <h2>Last Video</h2>
-        <hr>
-        <img src="image/roman_coliseum_evening.jpg" alt="">
-        <button>Culture</button>
-        <i class="fa fa-play v-play"></i>
-        <div class="in-l">
-            <a href="#">One of the most popular travel place in world – Roman Coliseum under evening sun <br>light and sunrise sky.</a>
-        <p>by John Casper</p>
+    <h2>Last Video</h2>
+    <hr>
+    <div class="l-v">
+        <div class="inner-l-v">
+            <button>Culture</button>
+        <div class="v-v"><i class="fa fa-play v-play"></i></div>
+        <div class="n-l-v">
+            <a href="#">One of the most popular travel place in world – Roman Coliseum under evening sun light and sunrise sky.</a>
+            <br>
+            <p>by John Casper</p>
+        </div> 
         </div>
-        
+          
     </div>
         <center style="height: 150px;">
             <h4>INSTAGRAM</h4>
@@ -228,10 +240,12 @@
     <div>
         <h2>Blockquote</h2>
         <hr>
+        <br><br>
         <Blockquote>
            <p> The use of traveling is to regulate imagination with reality, and instead of thinking of how things may be, see them as they are.<br>
             Samuel Johnson</p>
         </Blockquote>
+        <br><br>
     </div>
     <div class="recent-stories">
         <h1>Recent Stories</h1>
@@ -326,16 +340,98 @@
         
     </div>
     </footer>
-    <div class="conti">
-    <div class="row" style="padding:30px;margin-bottom: 0;">
-        <p class="col-6" style="float: left;">Tonsberg Theme by ModelTheme. All Rights Reserved</p>
-        <p class="col-3" style="margin-left: 200px;margin-right: 0;">Elite Author on ThemeForest</p>
-  <br>
-</div>    
+    <div class="last-f">
+       <div class="conti">
+            <div class="row" style="padding:30px;margin-bottom: 0;">
+                <p class="col-6" style="float: left;">Tonsberg Theme by ModelTheme. All Rights Reserved</p>
+                <p class="col-3" style="margin-left: 200px;margin-right: 0;">Elite Author on ThemeForest</p>
+                <br>
+            </div>    
+        </div> 
+    </div>
+    
+
+<!--Mobile view of footer-->
+
+<div class="m-v-f">
+    <div>
+        <img src="image/adspic.JPG" alt="">
+        <div>
+            <div>
+                <h2>Tonsberg</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <br>
+                <h2>Useful Links</h2><br>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Categories</h2>
+                <div class="c-widget">
+
+                    <div class="category-list-0">
+                        <img class="category-list-img" src="image/journey_through_sahara-500x70.jpg" alt="">
+                        <a class="cat-name" href="#">Travel</a>
+                        <span class="count-posts">5 Posts</span>
+                        <div class="category-list-overlay"></div>
+                    </div>
+
+                    <div class="category-list-0">
+                        <img class="category-list-img" src="image/suggest-a-trip-bg-1-500x70.jpg" alt="">
+                        <a class="cat-name" href="#">Nature</a>
+                        <span class="count-posts">3 Posts</span>
+                        <div class="category-list-overlay"></div>
+                    </div>
+
+                    <div class="category-list-0">
+                        <img class="category-list-img" src="image/pinmap-travel-post-500x70.jpg" alt="">
+                        <a class="cat-name" href="#">Discover</a>
+                        <span class="count-posts">3 Posts</span>
+                        <div class="category-list-overlay"></div>
+                    </div>
+
+                    <div class="category-list-0">
+                        <img class="category-list-img" src="image/sacred_highlands-500x70.jpg" alt="">
+                        <a class="cat-name" href="#">Lifestyle</a>
+                        <span class="count-posts">3 Posts</span>
+                        <div class="category-list-overlay"></div>
+                    </div>
+
+                    <div class="category-list-0">
+                        <img class="category-list-img" src="image/family_harmony_nature-500x70.jpg" alt="">
+                        <a class="cat-name" href="#">Story</a>
+                        <span class="count-posts">2 Posts</span>
+                        <div class="category-list-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <div class="n-l">
+                    <h3>Subscribe now!</h3>
+                    <form action="">
+                        <input type="email" placeholder="Your email address">
+                        <br><br>
+                        <input type="button" value="SUBSCIRBE">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
-
-
-
+<div class="last-m-f">
+    <div class="conti">
+         <div style="padding:30px;margin-bottom: 0;">
+             <p>Tonsberg Theme by ModelTheme. All Rights Reserved</p>
+             <p>Elite Author on ThemeForest</p>
+             <br>
+         </div>    
+     </div> 
+ </div>
 <script>
      //Jquery 
   $(document).ready(function(){
