@@ -670,6 +670,7 @@ footer .n-l input[type=button]{
 .prev, .next{display: block;}
 .m-v-Slides {display: none}
 .slide-1{display:block;}
+.slide-1, .slide-2, .slide-3{background-attachment: fixed;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -706,13 +707,21 @@ footer .n-l input[type=button]{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  0%{
+    transform: translateY(-100%);
+}
+100%{
+    transform: translateY(0);
+}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  0%{
+    transform: translateY(-100%);
+}
+100%{
+    transform: translateY(0);
+}
 }
 header{
   width: 100%;
