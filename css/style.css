@@ -1,13 +1,19 @@
 
 body {
-  font-family:"Times New Roman", Times, serif;
+   /*font-family:"Times New Roman", Times, serif;*/
     margin: 0;
     padding: 0;
     line-height: 1.4;
     color: black;
     animation: load-all 4000ms ease-in;
   }
-  
+  /*h1 { font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }*/
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD-A.woff") format("woff");
+  }
   * {
     box-sizing: border-box;
   }
@@ -16,11 +22,26 @@ body {
     max-width: 960px;
     overflow: hidden;
   }
+
   .row{
     display: flex;
   }
   hr{
     background-color: #8d8989;
+  }
+  .v-play{
+    background-color: #fff;
+    font-size:100px;
+    border-radius: 50%;
+    padding: 30px;
+    position: absolute;
+    left: 47%;
+    top: 400%;
+    transition: 2000ms;
+  }
+  .v-play:hover{
+    font-size: 20px;
+    padding: 35px;
   }
   header{
       margin-left: 7%;
@@ -214,23 +235,17 @@ nav ul li a:hover{
     background: url("../image/showcase3.JPG") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 .slide-2{
     background: url("../image/showcase2.JPG") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
     display: none;
 }
 .slide-3{
     background: url("../image/showcase1.JPG") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
     display: none;
 }
 .slide-inner {
@@ -409,10 +424,11 @@ nav ul li a:hover{
 }
 /*Recent Stories*/
 .conti{
-  margin-left: 100px;
+  margin-left: 70px;
 }
 .recent-stories{
   /*margin-left: 6%; */
+  animation: load-me 2000ms;
 }
 .stories{
   width: 48%;
@@ -450,16 +466,140 @@ nav ul li a:hover{
   width: 93%;
   height: 100%;
 }
+.in-l{
+  position: absolute;
+  top: 2950px;
+  left: 100px;
+  color:#fff;
+}
+.in-l a{
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.in-l a:hover{
+  border-bottom: 0.5px solid;
+}
+.w-l button{
+  border: none;
+  background-color: red;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  margin: 30px;
+  margin-bottom: 0;
+  position: absolute;
+  left:100px;
+}
+.w-l a:hover{
+  color: #fff;
+}
 blockquote{
   background-color: red;
   color: #fff;
   font-weight: bold;
   /*margin-left: 100px;*/
   width: 93%;
+  animation: load-me 2000ms;
 }
 blockquote p{
   padding: 60px;
   font-size: 25px;
+}
+
+/* Footer */
+.conti-2{
+  margin-left: 70px;
+}
+footer{
+  margin-top: 1000px;
+  background-color: rgb(248, 248, 248);
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  width: 100%;
+  color: rgb(153, 150, 150);
+  animation: load-me 2000ms;
+}
+footer img{
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+footer h2{
+  color:#000;
+}
+footer p{
+  color: rgb(80, 77, 77);
+  letter-spacing: 1px;
+}
+footer ul{
+  list-style-type: none;
+  padding: 5px;
+}
+footer li{
+  padding-bottom: 10px;
+}
+footer li a{
+  font-weight: bold;
+  color: rgb(80, 77, 77);
+}
+footer .n-l{
+  background-color: rgb(68, 65, 65);
+  padding: 40px;
+  padding-left:;
+  color: #fff;
+  width: 100%;
+}
+footer .n-l h3{
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer .n-l input[type=email]{
+  width: 90%;
+  border:1px solid #fff;
+  padding: 15px;
+  background-color: rgb(68, 65, 65);;
+  color: rgb(129, 124, 124);
+}
+footer .n-l input[type=button]{
+  width: 90%;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+  color: #000000;
+}
+/*Categories*/
+.cat-name{
+  position: absolute;
+  left:30px;
+  margin-top: 15px;
+}
+.category-list-0{
+  height: 50px;
+  width: 100%;
+  margin: 10px;
+}
+.category-list-img{
+  position: relative;
+  height: 100%;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+.count-posts{
+  height: 50px;
+  background-color: rgb(68, 67, 67);
+  width: 125px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ffffff;
+  left: 250px;
+  position: absolute;
+  
 }
 /*animations*/
 @keyframes load-all{
@@ -493,4 +633,43 @@ blockquote p{
   100%{
       transform: translateY(-50);
   }
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .conti{
+    
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
