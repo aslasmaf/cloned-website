@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Home Slider - Tonsberg</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Slider - Tonsberg</title>
+
     <link rel="shortcut icon" href="https://tonsberg.modeltheme.com/wp-content/themes/tonsberg/images/favicon.png">
     <link rel="stylesheet" href="https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD-A.woff">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -26,12 +24,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
-
 <body>
+
     <!--Header starts-->
     <header>
-        <div class="row">
-            <h2>tons<span>berg</span></h2>
+        <div class="top-head">
+            <h1>tons<span>berg</span></h1>
 
             <div class="ul-menu-icon openbtn">
                 <div></div>
@@ -47,100 +45,58 @@
                 <i class="fa fa-telegram"></i>
             </div>
         </div>
-        <hr>
-        <!--mobile view nav-->
-        <div class="m-v-n" id="MobNav">
-            <ul>
-                <p><a>Home</a></p>
-                <li><a href="#">Home v1</a></li>
-                <li><a href="#">Home v2</a></li>
-                <li><a href="#">Home v3</a></li>
-                <li><a href="#">Home v4</a></li>
-                <li><a href="#">Home v5</a></li>
-                <li><a href="#">Home v6</a></li>
-                <li><a href="#">Home v7</a></li>
-                <li><a href="#">Home v8</a></li>
-                <li><a href="#">Home v9</a></li>
-                <li><a href="#">Home v10</a></li>
-                <li><a href="#">Home v11</a></li>
-                <li><a href="#">Home v12</a></li>
-                <li><a href="#">Home Slider</a></li>
-            </ul>
-            <ul>
-                <p>Feature</p>
-                <li><a href="#">Suggest a Trip</a></li>
-                <li><a href="#">Post Formats</a></li>
-                <li><a href="#">Gallery </a></li>
-                <li><a href="#">Typography</a></li>
-            </ul>
-
-            <ul>
-                <p><a href="#">Discover</a></p>
-            </ul>
-
-            <ul>
-                <p>Destinations</p>
-
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About me</a></li>
-            </ul>
-
-            <ul>
-                <p>News</p>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li> 
-            </ul>
-            <p><a href="#">Contact</a></p>
-            
-        </div>
-        <!--side panel-->
-        <div id="mySidepanel" class="sidepanel" onclick="closeNavTouch();">
-            <div class="wrap-side-p">
-                <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
-                <h1>tons<span>berg</span></h1>
-                <p>Advertising</p>
-                <img src="image/adplace-blog.jpg" style="width: 100%;padding: 0;margin: 0;">
-                <input type="text" placeholder="Search...">
-                <h2>Recent Posts</h2>
+               <!--mobile view nav-->
+               <div class="m-v-n" id="MobNav">
                 <ul>
-                    <li><a href="#">Welcome to the Gutenberg Editor</a></li>
-                    <li><a href="#">Italia - Rome</a></li>
-                    <li><a href="#">Ireland - Dublin</a></li>
-                    <li><a href="#">Netherlands</a></li>
-                    <li><a href="#">Serbia - Belgrade</a></li>
+                    <p><a>Home</a></p>
+                    <li><a href="#">Home v1</a></li>
+                    <li><a href="#">Home v2</a></li>
+                    <li><a href="#">Home v3</a></li>
+                    <li><a href="#">Home v4</a></li>
+                    <li><a href="#">Home v5</a></li>
+                    <li><a href="#">Home v6</a></li>
+                    <li><a href="#">Home v7</a></li>
+                    <li><a href="#">Home v8</a></li>
+                    <li><a href="#">Home v9</a></li>
+                    <li><a href="#">Home v10</a></li>
+                    <li><a href="#">Home v11</a></li>
+                    <li><a href="#">Home v12</a></li>
+                    <li><a href="#">Home Slider</a></li>
                 </ul>
-                <h2>Recent Comment</h2>
-                <li><a href="#">John Casper on The family life in Harmony with awesome nature.</a></li>
-                <h2>Archives</h2>
                 <ul>
-                    <li><a href="#">December 2018</a></li>
-                    <li><a href="#">November 2018</a></li>
-                    <li><a href="#">October 2018</a></li>
+                    <p>Feature</p>
+                    <li><a href="#">Suggest a Trip</a></li>
+                    <li><a href="#">Post Formats</a></li>
+                    <li><a href="#">Gallery </a></li>
+                    <li><a href="#">Typography</a></li>
                 </ul>
-                <h2>Categories</h2>
+    
                 <ul>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Lifestyle</a></li>
-                    <li><a href="#">Nature</a></li>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Travel</a></li>
+                    <p><a href="#">Discover</a></p>
                 </ul>
-                <h2>Meta</h2>
+    
                 <ul>
-                    <li><a href="#">Log in</a> </li>
-                    <li><a href="#">Entries RSS</a></li>
-                    <li><a href="#">Comment RSS</a></li>
-                    <li><a href="#">WordPress.org</a></li>
+                    <p>Destinations</p>
+    
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About me</a></li>
                 </ul>
-                <!--Calender-->
-                <p style="color: rgb(105, 102, 102);margin: 10px;">September 2020</p>
-                <img src="image/calender.PNG" style="width: 85%;margin-bottom: 100px; margin-left: 30px;">
+    
+                <ul>
+                    <p>News</p>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li> 
+                </ul>
+                <p><a href="#">Contact</a></p>
+                
             </div>
-        </div>
-        <!--End side panel-->
-        <nav data-spy="affix" data-offset-top="197">
+            <!--End Mobile-view Nav-->
+        
+        <!--Top Nav-->
+
+        <nav data-spy="affix" data-offset-top="197" id="nav-menu">
             <div class="menu-icon openbtn" onclick="openNav()">
                 <div></div>
                 <div></div>
@@ -202,6 +158,58 @@
             </ul>
         </nav>
     </header>
+    <!--Header Ends-->
+
+        <!--side panel-->
+        <div id="mySidepanel" class="sidepanel" onclick="closeNavTouch();">
+            <div class="wrap-side-p">
+                <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+                <h1>tons<span>berg</span></h1>
+                <p>Advertising</p>
+                <img src="image/adplace-blog.jpg" style="width: 100%;padding: 0;margin: 0;">
+                <input type="text" placeholder="Search...">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Welcome to the Gutenberg Editor</a></li>
+                    <li><a href="#">Italia - Rome</a></li>
+                    <li><a href="#">Ireland - Dublin</a></li>
+                    <li><a href="#">Netherlands</a></li>
+                    <li><a href="#">Serbia - Belgrade</a></li>
+                </ul>
+                <h2>Recent Comment</h2>
+                <li><a href="#">John Casper on The family life in Harmony with awesome nature.</a></li>
+                <h2>Archives</h2>
+                <ul>
+                    <li><a href="#">December 2018</a></li>
+                    <li><a href="#">November 2018</a></li>
+                    <li><a href="#">October 2018</a></li>
+                </ul>
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Travel</a></li>
+                </ul>
+                <h2>Meta</h2>
+                <ul>
+                    <li><a href="#">Log in</a> </li>
+                    <li><a href="#">Entries RSS</a></li>
+                    <li><a href="#">Comment RSS</a></li>
+                    <li><a href="#">WordPress.org</a></li>
+                </ul>
+                <!--Calender-->
+                <p style="color: rgb(105, 102, 102);margin: 10px;">September 2020</p>
+                <img src="image/calender.PNG" style="width: 85%;margin-bottom: 100px; margin-left: 30px;">
+            </div>
+        </div>
+    
+        <!--End side panel-->
+
+          <!--Showcase slides-->
+
+        <!--Slide Shower-->
     <div class="slide-shower">
         <div class="slide-1-s">
             <h4 id="s1sh">LIFESTYLE</h4>
@@ -216,7 +224,11 @@
             <p id="s3sp">The True Story - Sacred<br>Highlands</p>
         </div>
     </div>
-    <div class="showcase slide-1 m-v-Slides" id="s1">
+        <!--End Slide Shower-->
+
+    <!--Slides-->
+
+    <div class="showcase slide-1 m-v-Slides" id="s1" style="background: url('image/showcase3.JPG') no-repeat center center/cover;">
         <div class="slide-inner">
             <div class="container">
                 <p style="color: red;margin-bottom: 50px;">OCTOBER 31,2018</p>
@@ -225,7 +237,7 @@
             </div>
         </div>
     </div>
-    <div class="showcase slide-2 m-v-Slides" id="s2">
+    <div class="showcase slide-2 m-v-Slides" id="s2" style="background: url('image/showcase2.JPG') no-repeat center center/cover;">
         <div class="slide-inner">
             <div class="container">
                 <p style="color: red;margin-bottom: 50px;">OCTOBER 31,2018</p>
@@ -234,7 +246,7 @@
             </div>
         </div>
     </div>
-    <div class="showcase slide-3 m-v-Slides" id="s3">
+    <div class="showcase slide-3 m-v-Slides" id="s3" style="background: url('image/showcase1.JPG') no-repeat center center/cover;">
         <div class="slide-inner">
             <div class="container">
                 <p style="color: red;margin-bottom: 50px;">OCTOBER 31,2018</p>
@@ -243,10 +255,14 @@
             </div>
         </div>
     </div>
+    <!--End Slides-->
+    
+    <!--Mobile view slide shower-->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    <!--Mobile view slide shower-->
     <br><br>
+    <!--Section Starts-->
     <div class="conti">
         <div class="recent-stories">
             <h2>Recent Stories</h1>
@@ -272,6 +288,7 @@
                     <p>By John Casper November 1, 2018</p>
                 </div>
         </div>
+        <br>
         <div class="w-l">
             <h2>Where I went</h2>
             <hr>
@@ -292,21 +309,17 @@
             </div>
 
         </div>
-        <center style="height: 150px;">
+        <center style="height: 50px;">
             <h4>INSTAGRAM</h4>
         </center>
-
-        <br>
         <div>
             <h2>Blockquote</h2>
             <hr>
-            <br><br>
             <Blockquote>
                 <p> The use of traveling is to regulate imagination with reality, and instead of thinking of how things
                     may be, see them as they are.<br>
                     Samuel Johnson</p>
             </Blockquote>
-            <br><br>
         </div>
         <div class="recent-stories">
             <h1>Random Stories</h1>
@@ -333,242 +346,69 @@
             </div>
         </div>
     </div>
-    <br>
+<!--section ends-->
 
+<!--Footer starts-->
     <footer>
-        <div class="conti-2">
-            <img src="image/adspic.JPG" alt="">
-            <div class="row">
-                <div class="col-3 col-s-3">
-                    <h2>Tonsberg</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. </p>
-                    <br>
-                    <h2>Useful Links</h2><br>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+            <div class="f-img">
+                <img src="image/adspic.JPG" alt="Adspic">
+            </div>
+        <div class="first-d">
+            <div class="t-tr">
+                <h2>Tonsberg Theme</h2>
+                <p>Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur.</p>
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="categories">
+                <h2>Categories</h2>
+                <div class="cat-list">
+                    <div class="cat-first" style="background: url('image/journey_through_sahara-500x70.jpg');"><p style="background: none;">Travel</p></div>
+                    <div class="cat-post"><p>5 POSTS</p></div>
                 </div>
-                <div class="col-4 col-s-4 cat-g">
-                    <h2>Categories</h2>
-                    <div class="c-widget">
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/journey_through_sahara-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Travel</a>
-                            <span class="count-posts">5 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/suggest-a-trip-bg-1-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Nature</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/pinmap-travel-post-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Discover</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/sacred_highlands-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Lifestyle</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/family_harmony_nature-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Story</a>
-                            <span class="count-posts">2 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-                    </div>
+                <div class="cat-list">
+                    <div class="cat-first" style="background: url('image/suggest-a-trip-bg-1-500x70.jpg');"><p>Nature</p></div>
+                    <div class="cat-post"><p>3 POSTS</p></div>
                 </div>
-                <div class="col-4 col-s-4">
-                    <h2>Newsletter</h2>
-                    <div class="n-l">
-                        <h3>Subscribe now!</h3>
-                        <form action="">
-                            <input type="email" placeholder="Your email address">
-                            <br><br>
-                            <input type="button" value="SUBSCIRBE">
-                        </form>
-                    </div>
+                <div class="cat-list">
+                    <div class="cat-first" style="background: url('image/pinmap-travel-post-500x70.jpg');"><p>Discover</p></div>
+                    <div class="cat-post"><p>3 POSTS</p></div>
+                </div>
+                <div class="cat-list">
+                    <div class="cat-first" style="background: url('image/sacred_highlands-500x70.jpg');"><p>Lifestyle</p></div>
+                    <div class="cat-post"><p>3 POSTS</p></div>
+                </div>
+                <div class="cat-list">
+                    <div class="cat-first" style="background-image: url('image/family_harmony_nature-500x70.jpg');"><p>Story</p></div>
+                    <div class="cat-post"><p>2 POSTS</p></div>
                 </div>
             </div>
 
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <form action="">
+                    <h2>Subscribe now!</h2>
+                    <input type="email" placeholder="Your email address">
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+        </div>
+
+        <div class="last-d">
+            <p>Tonsberg Theme by ModelTheme All Rights Reserved</p>
+            <p class="l-p">Elite Author on ThemeForest</p>
         </div>
     </footer>
-    <div class="last-f">
-        <div class="conti">
-            <div class="row" style="padding:30px;margin-bottom: 0;">
-                <p class="col-6" style="float: left;">Tonsberg Theme by ModelTheme. All Rights Reserved</p>
-                <p class="col-3" style="margin-left: 200px;margin-right: 0;">Elite Author on ThemeForest</p>
-                <br>
-            </div>
-        </div>
-    </div>
 
 
-    <!--Mobile view of footer-->
-
-    <div class="m-v-f">
-        <div>
-            <img src="image/adspic.JPG" alt="">
-            <div>
-                <div>
-                    <h2>Tonsberg</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. </p>
-                    <br>
-                    <h2>Useful Links</h2><br>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Categories</h2>
-                    <div class="c-widget">
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/journey_through_sahara-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Travel</a>
-                            <span class="count-posts">5 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/suggest-a-trip-bg-1-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Nature</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/pinmap-travel-post-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Discover</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/sacred_highlands-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Lifestyle</a>
-                            <span class="count-posts">3 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-
-                        <div class="category-list-0">
-                            <img class="category-list-img" src="image/family_harmony_nature-500x70.jpg" alt="">
-                            <a class="cat-name" href="#">Story</a>
-                            <span class="count-posts">2 Posts</span>
-                            <div class="category-list-overlay"></div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Newsletter</h2>
-                    <div class="n-l">
-                        <h3>Subscribe now!</h3>
-                        <form action="">
-                            <input type="email" placeholder="Your email address">
-                            <br><br>
-                            <input type="button" value="SUBSCIRBE">
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="last-m-f">
-        <div class="conti">
-            <div style="padding:30px;margin-bottom: 0;">
-                <p>Tonsberg Theme by ModelTheme. All Rights Reserved</p>
-                <p>Elite Author on ThemeForest</p>
-                <br>
-            </div>
-        </div>
-    </div>
-    <script>
-        //Jquery 
-        $(document).ready(function () {
-            $(".slide-2-s").click(function () {
-                //$("#s1").css("display", "none");
-                // $("#s3").css("display", "none");
-                $("#s3").slideUp("slow");
-                $("#s1").slideUp("slow");
-                $("#s2").slideDown("slow");
-                $("#s2sh").css("color", "red");
-                $("#s1sh").css("color", "rgb(150, 130, 130)");
-                $("#s3sh").css("color", "rgb(150, 130, 130)");
-                $("#s1sp").css("color", "rgb(150, 130, 130)");
-                $("#s2sp").css("color", "#fff");
-                $("#s3sp").css("color", "rgb(150, 130, 130)");
-            });
-            $(".slide-3-s").click(function () {
-                //$("#s1").css("display", "none");
-                //$("#s2").css("display", "none");
-                $("#s2").slideUp("slow");
-                $("#s1").slideUp("slow");
-                $("#s3").slideDown("slow");
-                $("#s3sh").css("color", "red");
-                $("#s1sh").css("color", "rgb(150, 130, 130)");
-                $("#s2sh").css("color", "rgb(150, 130, 130)");
-                $("#s1sp").css("color", "rgb(150, 130, 130)");
-                $("#s3sp").css("color", "#fff");
-                $("#s2sp").css("color", "rgb(150, 130, 130)");
-            });
-            $(".slide-1-s").click(function () {
-                $("#s2").slideUp("slow");
-                $("#s3").slideUp("slow");
-                $("#s1").slideDown("slow");
-                $("#s1sh").css("color", "red");
-                $("#s3sh").css("color", "rgb(150, 130, 130)");
-                $("#s2sh").css("color", "rgb(150, 130, 130)");
-                $("#s3sp").css("color", "rgb(150, 130, 130)");
-                $("#s1sp").css("color", "#fff");
-                $("#s2sp").css("color", "rgb(150, 130, 130)");
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                if (this.hash !== "") {
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-        $(document).ready(function () {
-            $(".ul-menu-icon").click(function () {
-                $(".m-v-n").toggle();
-            });
-        });
-    </script>
-
+    <script src="js/main-jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
