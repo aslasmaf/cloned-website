@@ -471,110 +471,113 @@ nav li a{
   .m-v-n{
     display: none;
   }
-  /*Footer*/
-  .first-d{
-    display: flex;
-    width: 100%;
-    height: max-content;
-  }
-  footer{
-    margin: 5rem;
-   /* background-color: rgb(235, 235, 235);*/
-   width: max-content;
-    height: max-content;
-  }
-  footer h2{margin: 3rem;}
- .f-img img{
-    width: 60%;
-    margin: 5rem;
-    margin-left: 20.5rem;
-  }
-footer h2{
-  margin-left: 0;
-  padding-left: 0;
-}
-.t-tr{width: 40rem;}
-.t-tr p{
-  padding: 15px;
-  color: rgb(185, 184, 184);
-}
-  .t-tr ul{
+    /*Footer*/
+    footer{
+      margin: 1rem;
+     /* background-color: rgb(235, 235, 235);*/
+      height: max-content;
+      background: none;
+      padding: 10rem;
+    }
+  footer h2{margin: 0;}
+   .f-img img{
+      width: 70%;
+      margin: 1rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  footer h2{
     margin-left: 0;
-    padding-left: 1.5rem;
-  }
-  .t-tr li{
-    list-style: none;
-    padding: 5px;
     padding-left: 0;
+    margin-bottom: 5rem;
+  }
+  .first-d{display: flex;}
+  .t-tr{width:100%;}
+  .t-tr p{
+    padding: 0;
+    padding-top: 15px;
     color: rgb(185, 184, 184);
   }
-  .categories{width: 40rem;}
-  .cat-list{
-    display: flex;
-    margin: 1rem;
-  }
-  .cat-first{
-    width: 100%;
-    height: 5rem;
-  }
-  .cat-first p{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    color:#fff;
-    padding: 15px;
-  }
-  .cat-post{
-    background-color: rgb(48, 46, 46);
-    color: #fff;
-    width: 12rem;
-  }
-  .cat-post p{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .newsletter{
-    width: 40rem; 
-    margin-left: 2rem;
-  }
-  .newsletter form{
-    background-color: rgb(34, 33, 33);
-    height: 30rem;
-    width: 100%;
-    color: #fff;
-    padding: 5rem;
-    padding-top: 3rem;
-    align-items: center;
-  }
-  .newsletter input[type=email]{
-    width: 100%;
-    height: 5rem;
-    border: 1px solid rgb(209, 208, 208);
-    padding: 1rem;
-    background-color:rgb(34, 33, 33);
-  }
-  .newsletter input[type=submit]{
-    width: 100%;
-    height: 5rem;
-    border: none;
-    padding: 1rem;
-    background-color: #fff;
-    margin-top: 2rem;
-    color: #000;
-  }
-  .last-d{
-    display: flex;
-    color: rgb(185, 184, 184);
-    font-size: 1.5rem;
-    padding: 5rem;
-    padding-bottom: 1rem;
-    margin-top: 5rem;
-  }
-  .l-p{margin-left: 50%;}
- 
+    .t-tr ul{
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .t-tr li{
+      list-style: none;
+      padding: 5px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 0;
+      color: rgb(185, 184, 184);
+    }
+    .categories{width: 100%;}
+    .cat-list{
+      display: flex;
+      margin: 1rem;
+    }
+    .cat-first{
+      width: 65%;
+      height: 5rem;
+    }
+    .cat-first p{
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 100%;
+      color:#fff;
+      padding: 15px;
+    }
+    .cat-first:hover{
+      background-size: 200%;
+    }
+    .cat-post{
+      background-color: rgb(48, 46, 46);
+      color: #fff;
+      width: 10rem;
+    }
+    .cat-post p{
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .newsletter{width: 100%;}
+    .newsletter h2{margin-bottom: 5rem;}
+    .newsletter form h2{margin-bottom: 5rem;}
+    .newsletter form{
+      background-color: rgb(34, 33, 33);
+      height: 30rem;
+      width: 100%;
+      color: #fff;
+      padding: 5rem;
+      padding-top: 3rem;
+      align-items: center;
+    }
+    .newsletter input[type=email]{
+      width: 100%;
+      height: 5rem;
+      border: 1px solid rgb(209, 208, 208);
+      padding: 1rem;
+      background-color:rgb(34, 33, 33);
+    }
+    .newsletter input[type=submit]{
+      width: 100%;
+      height: 5rem;
+      border: none;
+      padding: 1rem;
+      background-color: #fff;
+      margin-top: 2rem;
+      color: #000;
+    }
+    .last-d{
+      display: flex;
+      color: rgb(109, 109, 109);
+      font-size: 1.5rem;
+      padding: 5rem;
+      padding-bottom: 1rem;
+      margin-top: 5rem;
+    }
+    .l-p{margin-left: 45%;}
   @media only screen and (max-width: 1024px){
    .top-head{
      display: block;
@@ -706,100 +709,17 @@ footer h2{
   .v-v{
     display: none;
   }
-   /*Footer*/
-   footer{
-    margin: 5rem;
-   /* background-color: rgb(235, 235, 235);*/
-    max-width: 768px;
-    height: max-content;
-    background: none;
+  /*Footer*/
+  footer{
+    padding: 3rem;
   }
- .f-img img{
-    width: 90%;
-    margin: 3rem;
-  }
-footer h2{
-  margin-left: 0;
-  padding-left: 0;
-}
-.t-tr p{
-  padding: 15px;
-  color: rgb(185, 184, 184);
-}
-  .t-tr ul{
-    margin-left: 0;
-    padding-left: 1.5rem;
-  }
-  .t-tr li{
-    list-style: none;
-    padding: 5px;
-    padding-left: 0;
-    color: rgb(185, 184, 184);
-  }
-
-  .cat-list{
-    display: flex;
-    margin: 1rem;
-  }
-  .cat-first{
-    width: 65%;
-    height: 5rem;
-  }
-  .cat-first p{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    color:#fff;
-    padding: 15px;
-  }
-  .cat-post{
-    background-color: rgb(48, 46, 46);
-    color: #fff;
-    width: 12rem;
-  }
-  .cat-post p{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .newsletter{width: 100%;}
-  .newsletter form{
-    background-color: rgb(34, 33, 33);
-    height: 30rem;
-    width: 100%;
-    color: #fff;
-    padding: 5rem;
-    padding-top: 3rem;
-    align-items: center;
-  }
+  .first-d{display: block;}
+  .last-d{display: block;}
   .newsletter h2{
     margin-bottom: 5rem;
   }
-  .newsletter input[type=email]{
-    width: 100%;
-    height: 5rem;
-    border: 1px solid rgb(209, 208, 208);
-    padding: 1rem;
-    background-color:rgb(34, 33, 33);
-  }
-  .newsletter input[type=submit]{
-    width: 100%;
-    height: 5rem;
-    border: none;
-    padding: 1rem;
-    background-color: #fff;
-    margin-top: 2rem;
-    color: #000;
-  }
-  .last-d{
-    color: rgb(185, 184, 184);
-    font-size: 1.5rem;
-    padding: 5rem;
-    padding-bottom: 1rem;
-    margin-top: 5rem;
-  }
+  .f-img img{width: 100%;}
+  .l-p{margin-left: 0;}
   }
   @media only screen and (max-width: 700px) {
   /* For mobile phones: */
@@ -807,9 +727,6 @@ footer h2{
      display: inline;
      margin:5px 5% 5px 5%;
  }
- .category-list-0{
-    width:100%;
-  }
   /*slideshow*/
   .prev, .next{display: block;}
   .m-v-Slides {display: none}
@@ -1000,104 +917,20 @@ header{
   .v-v{
     display: none;
   }
+
   /*Footer*/
   footer{
-    margin: 1rem;
-   /* background-color: rgb(235, 235, 235);*/
-    max-width: 400px;
-    height: max-content;
-    background: none;
+    max-width: 350px;
+    margin:0;
+    padding:2rem;
   }
-
- .f-img img{
-    width: 90%;
-    margin: 1rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-footer h2{
-  margin-left: 0;
-  padding-left: 0;
-}
-.t-tr p{
-  padding: 15px;
-  color: rgb(185, 184, 184);
-}
-  .t-tr ul{
-    margin-left: 0;
-    padding-left: 1.5rem;
-  }
-  .t-tr li{
-    list-style: none;
-    padding: 5px;
-    padding-left: 0;
-    color: rgb(185, 184, 184);
-  }
-  .cat-list{
-    display: flex;
-    margin: 1rem;
-  }
-  .cat-first{
-    width: 65%;
-    height: 5rem;
-  }
-  .cat-first p{
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    color:#fff;
-    padding: 15px;
-  }
-  .cat-first:hover{
-    background-size: 200%;
-  }
-  .cat-post{
-    background-color: rgb(48, 46, 46);
-    color: #fff;
-    width: 10rem;
-  }
-  .cat-post p{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .newsletter form{
-    background-color: rgb(34, 33, 33);
-    height: 30rem;
-    width: 100%;
-    color: #fff;
-    padding: 5rem;
-    padding-top: 3rem;
-    align-items: center;
-  }
+  .first-d{display: block;}
+  .last-d{display: block;}
   .newsletter h2{
     margin-bottom: 5rem;
   }
-  .newsletter input[type=email]{
-    width: 100%;
-    height: 5rem;
-    border: 1px solid rgb(209, 208, 208);
-    padding: 1rem;
-    background-color:rgb(34, 33, 33);
-  }
-  .newsletter input[type=submit]{
-    width: 100%;
-    height: 5rem;
-    border: none;
-    padding: 1rem;
-    background-color: #fff;
-    margin-top: 2rem;
-    color: #000;
-  }
-  .last-d{
-    color: rgb(185, 184, 184);
-    font-size: 1.5rem;
-    padding: 5rem;
-    padding-bottom: 1rem;
-    margin-top: 5rem;
-  }
+  .f-img img{width: 100%;}
+  .l-p{margin-left: 0;}
   .affix{display: none;}
   
 }
